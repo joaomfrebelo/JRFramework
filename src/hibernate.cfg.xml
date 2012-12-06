@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.ast.ASTQueryTranslatorFactory</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping resource="sakila/entity/Inventory.hbm.xml"/>
+    <mapping resource="sakila/entity/City.hbm.xml"/>
+    <mapping resource="sakila/entity/Address.hbm.xml"/>
+    <mapping resource="sakila/entity/Film.hbm.xml"/>
+    <mapping resource="sakila/entity/FilmCategory.hbm.xml"/>
+    <mapping resource="sakila/entity/Customer.hbm.xml"/>
+    <mapping resource="sakila/entity/Rental.hbm.xml"/>
+    <mapping resource="sakila/entity/Actor.hbm.xml"/>
+    <mapping resource="sakila/entity/Language.hbm.xml"/>
+    <mapping resource="sakila/entity/FilmText.hbm.xml"/>
+    <mapping resource="sakila/entity/FilmActor.hbm.xml"/>
+    <mapping resource="sakila/entity/Staff.hbm.xml"/>
+    <mapping resource="sakila/entity/Category.hbm.xml"/>
+    <mapping resource="sakila/entity/Payment.hbm.xml"/>
+    <mapping resource="sakila/entity/Country.hbm.xml"/>
+    <mapping resource="sakila/entity/Store.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

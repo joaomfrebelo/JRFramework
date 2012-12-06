@@ -1,0 +1,24 @@
+JRFramework is a simple way to start a Java Swing and Hibernate project with table and forms.
+This beta version have a example within the project is Actores Sakila database of Mysql, to teste and run you must have first to install Sakila database, can be downloaded from MySql web site.
+Realease version will not have the example within the source code but beside.
+
+Libraries:
+	Hibernate 3
+	JDK 1.7
+	Mysql-connecte-java-5.1.18
+
+
+packages:
+	 info.joaorebelo.JRFramework
+	 * Main class
+	 * Default Layout
+
+	info.joaorebelo.JRjavaUtils.table
+	* Class to contruct the tables
+
+	info.joaorebelo.JRjavaUtils.ui
+	* Utilities
+
+
+	
+
